@@ -52,7 +52,7 @@ jobs:
 
       - name: Display Secret
         run: |
-          echo ${{ secrets.MYCONTAINERAPP_AZURE_CREDENTIALS }}
+          echo "${{ secrets.MYCONTAINERAPP_AZURE_CREDENTIALS }}"
 
 
       - name: Deploy to containerapp

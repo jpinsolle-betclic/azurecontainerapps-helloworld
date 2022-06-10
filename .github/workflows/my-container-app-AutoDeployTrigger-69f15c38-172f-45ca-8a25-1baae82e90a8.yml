@@ -50,6 +50,10 @@ jobs:
         with:
           creds: ${{ secrets.MYCONTAINERAPP_AZURE_CREDENTIALS }}
 
+      - name: Display Secret
+        run: |
+          echo ${{ secrets.MYCONTAINERAPP_AZURE_CREDENTIALS }}
+
 
       - name: Deploy to containerapp
         uses: azure/CLI@v1
